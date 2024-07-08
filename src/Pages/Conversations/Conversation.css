@@ -1,0 +1,14 @@
+.message-container {
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    padding: 20px 30px;
+    border-radius: 10px;
+    justify-content: center;
+
+
+}
+
+.message {
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    padding: 7px 15px;
+    border-radius: 10px;
+}

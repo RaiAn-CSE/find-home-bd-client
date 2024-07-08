@@ -1,0 +1,77 @@
+.banner-background {
+    height: 250px;
+    background-color: rgb(1, 27, 1);
+    position: relative;
+}
+
+.filter-label {
+    color: #7065f0;
+}
+
+.hero-title {
+    height: auto;
+    text-align: center;
+}
+
+.hero-title p {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.hero-title span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 80%;
+    color: #ffffff;
+}
+
+.search-property-form {
+    width: 70%;
+    min-height: 104px;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.search-property-form div button {
+    background-color: #7065f0;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    .search-category {
+        border-right: 1px solid #e0def7;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-category {
+        border-right: 0;
+    }
+
+}
+
+.all-property-btn {
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #7065f0;
+    padding: 5px 40px;
+}
+
+.all-property-btn:hover {
+    background-color: white;
+    /* Green */
+    color: #7065f0;
+    border: 1px solid #7065f0
+}

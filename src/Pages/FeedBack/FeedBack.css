@@ -1,0 +1,20 @@
+.feedback-container {
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    padding: 20px 30px;
+    border-radius: 10px;
+
+}
+
+.feedback-container h3 {
+    color: darkgreen;
+}
+
+.feedback {
+    min-height: 100px;
+}
+
+.delete-btn {
+    display: flex;
+    justify-content: center;
+    position: bottom;
+}

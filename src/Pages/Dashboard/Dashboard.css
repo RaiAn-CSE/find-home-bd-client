@@ -1,0 +1,61 @@
+.card-content {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .card-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.dasboard-bg {
+    background: #7065f0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dasboard-bg h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 80%;
+    color: #ffffff;
+    background-position: center;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .dasboard-bg h3 {
+        font-size: 25px;
+
+    }
+}
+
+.dashboard-btn {
+    text-decoration: none;
+    background-color: #7065f0 !important;
+    color: white !important;
+    border-radius: 4px !important;
+}
+
+.dashboard-btn:hover {
+    background-color: white !important;
+    color: #7065f0 !important;
+    border: 1px solid #7065f0 !important;
+    transition: background-color 0.5s !important;
+
+}

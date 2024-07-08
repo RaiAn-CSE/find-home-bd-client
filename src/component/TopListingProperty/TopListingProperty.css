@@ -1,0 +1,63 @@
+.card {
+  border-radius: 8px;
+  background-color: #FFF;
+  border: 2px solid #7065f0;
+  margin-bottom: 50px;
+}
+
+.card img {
+  height: 172px;
+  width: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+
+
+.location {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.details .rent {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.availability {
+  text-align: center;
+  color: #7065f0;
+}
+
+.view-btn {
+  border-radius: 3px;
+  text-align: center;
+  justify-content: center;
+  background-color: #7065f0;
+  color: white;
+  padding: 3px 40px;
+}
+
+.view-btn:hover {
+  background-color: white;
+  /* Green */
+  color: #7065f0;
+  border: 1px solid #7065f0;
+  transition: background-color 0.5s;
+}
+
+.top-listing-title p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+
+  color: #000929;
+
+}
+
+@media screen and (max-width: 600px) {
+  .top-listing-title p {
+
+    font-size: 25px;
+
+  }
+}
