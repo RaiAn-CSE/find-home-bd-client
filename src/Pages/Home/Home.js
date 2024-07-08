@@ -5,6 +5,7 @@ import Category from "../../component/Category/Category";
 import "./Home.css";
 import useTitle from "../../hooks/useTitle";
 import TopListingProperty from "../../component/TopListingProperty/TopListingProperty";
+import Advertise from "./Advertise";
 // import chatBot from "../../images/chatbot.png";
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <Hero></Hero>
+      <Advertise />
       <section className="category-section h-auto w-auto py-5">
         <div className="container mt-5 mt-lg-0 mt-md-0">
           <div className="category-title mt-sm-5 mt-lg-0 mt-md-0">

@@ -73,6 +73,27 @@ const NavSection = () => {
                 </>
               )} */}
 
+              {/* {isSeller && (
+                <>
+                  <div className="">
+                    <Link
+                      className="dashboard-btn form-control text-center "
+                      to="/dashboard/myProperty"
+                    >
+                      My Property
+                    </Link>
+                  </div>
+                  <div className="mt-3">
+                    <Link
+                      className="dashboard-btn form-control text-center "
+                      to="/addProperty"
+                    >
+                      Add Property
+                    </Link>
+                  </div>
+                </>
+              )} */}
+
               <li className="nav-item">
                 <Link to="/aboutUs" className="nav-link nav-style">
                   About Us
@@ -90,7 +111,6 @@ const NavSection = () => {
                   </li>
                 </>
               )}
-
             </ul>
 
             {user?.uid ? (
