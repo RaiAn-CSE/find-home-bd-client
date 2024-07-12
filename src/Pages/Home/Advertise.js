@@ -23,6 +23,7 @@ const Advertise = () => {
                                 />
                             </a>
                         </div>
+
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                             <a href="https://www.upmenu.com/blog/food-advertisements/" className="d-block" target="_blank" rel="noopener noreferrer">
                                 <img
@@ -32,6 +33,7 @@ const Advertise = () => {
                                 />
                             </a>
                         </div>
+
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                             <a href="https://www.postermywall.com/index.php/l/shoe-advertisement-poster" className="d-block" target="_blank" rel="noopener noreferrer">
                                 <img
@@ -41,6 +43,7 @@ const Advertise = () => {
                                 />
                             </a>
                         </div>
+
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                             <a href="https://www.postermywall.com/index.php/l/shoe-advertisement-poster" className="d-block" target="_blank" rel="noopener noreferrer">
                                 <img

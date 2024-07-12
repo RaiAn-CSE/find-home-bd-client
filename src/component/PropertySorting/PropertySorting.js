@@ -28,6 +28,21 @@ const PropertySorting = ({ handleForm }) => {
             <option value="Mymensingh">Mymensingh</option> */}
           </Form.Select>
         </Form.Group>
+
+        <Form.Group className="mb-2">
+          <Form.Select aria-label="Default select example" name="area" required>
+            <option value="">Choose are...</option>
+            <option value="Dhanmondi">Dhanmondi</option>
+            <option value="Mohammadpur">Mohammadpur</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="Uttara">Uttara</option>
+            <option value="Bashundhara">Bashundhara</option>
+            <option value="Badda">Badda</option>
+            <option value="Khilkhet">Khilkhet</option>
+            <option value="Farmgate">Farmgate</option>
+          </Form.Select>
+        </Form.Group>
+
         <h5 className="mt-2">Types of Rent</h5>
         <Form.Group required >
           {/* <Form.Check name="rentType" type="checkbox" label="Apartment Building" value="Apartment Building" /> */}

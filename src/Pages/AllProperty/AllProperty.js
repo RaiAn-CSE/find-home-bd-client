@@ -17,35 +17,24 @@ const AllProperty = () => {
 
   const location = useLocation();
   const homeSearch = location?.state?.data;
-  console.log("location.state.data", homeSearch);
-
-  // const { data } = location?.state;
-  // setPosts(posts)
-  console.log("new data", posts);
 
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  console.log(currentPosts);
+
   //change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-  console.log("posts", posts);
 
   //handle form
   const handleForm = (event) => {
     event.preventDefault();
 
-    // price
-
     const price = event.target.price.value;
-
-    // city
     const city = event.target.city.value;
-
-    // rent type
+    const area = event.target.area.value;
     const rentType = event.target.rentType;
+
     const rentCheck = Object.values(rentType).filter(
       (rent) => rent.checked === true
     );
@@ -54,10 +43,8 @@ const AllProperty = () => {
     });
 
     const month = event.target.month.value;
-
-    // bed
-
     const bedAmount = event.target.bed;
+
     const bedCheck = Object.values(bedAmount).filter(
       (bed) => bed.checked === true
     );
@@ -66,8 +53,8 @@ const AllProperty = () => {
     });
 
     // wash
-
     const washAmount = event.target.wash;
+
     const washCheck = Object.values(washAmount).filter(
       (wash) => wash.checked === true
     );
@@ -76,7 +63,7 @@ const AllProperty = () => {
     });
 
     fetch(
-      `http://localhost:5000/productCollection?price=${price}&city=${city}&rentType=${rentCheckValue}&bedAmount=${bedCheckValue}&washAmount=${washCheckValue}&month=${month}`
+      `http://localhost:5000/productCollection?price=${price}&city=${city}&area=${area}&rentType=${rentCheckValue}&bedAmount=${bedCheckValue}&washAmount=${washCheckValue}&month=${month}`
     )
       .then((res) => res.json())
       .then((data) => setPosts(data));
@@ -95,6 +82,8 @@ const AllProperty = () => {
       .then((res) => res.json())
       .then((data) => setPosts(data));
   };
+
+
   useEffect(() => {
     if (homeSearch?.city) {
 
@@ -114,13 +103,16 @@ const AllProperty = () => {
       fetchPosts();
     }
   }, [homeSearch?.city, homeSearch?.area, homeSearch?.rent]);
+
+
+
   return (
     <div>
       <div className="banner-section">
         <PropertyBanner handleSearch={handleSearch}></PropertyBanner>
       </div>
       <div className="container">
-        <h3 className="mt-5 fw-bolder">Search results:-</h3>
+        <h3 className="mt-5 fw-bolder">Search results:</h3>
         <div className="row">
           <div className="col-md-3 col-lg-3 col-sm-12">
             <PropertySorting handleForm={handleForm}></PropertySorting>
@@ -128,7 +120,7 @@ const AllProperty = () => {
           <div className="col-md-9 col-lg-9 col-sm-12">
             <div className="ms-4">
               <h3 className="fw-bolder">Property For Rent</h3>
-              <span>{posts.length} results.</span>
+              <span>{posts.length} results</span>
             </div>
             <div className="all-property-card">
               <Posts posts={currentPosts} loading={loading}></Posts>
