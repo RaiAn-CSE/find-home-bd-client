@@ -21,7 +21,7 @@ const MyProperty = () => {
     queryFn: async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/products?email=${user?.email}`
+          `https://find-home-bd-server.vercel.app/products?email=${user?.email}`
         );
         const data = await res.json();
         return data;
@@ -37,7 +37,7 @@ const MyProperty = () => {
   const handleDelete = (id) => {
     const agree = window.confirm(`Are you sure you want to delete :${id} `);
     if (agree) {
-      fetch(`http://localhost:5000/products/${id}`, {
+      fetch(`https://find-home-bd-server.vercel.app/products/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -57,7 +57,7 @@ const MyProperty = () => {
       // Add other fields as necessary
     };
 
-    fetch(`http://localhost:5000/products/${id}`, {
+    fetch(`https://find-home-bd-server.vercel.app/products/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const FeedBack = () => {
     queryFn: async () => {
       try {
         const res = await fetch(
-          "http://localhost:5000/feedback",
+          "https://find-home-bd-server.vercel.app/feedback",
           {
             headers: {},
           }
@@ -30,7 +30,7 @@ const FeedBack = () => {
     const agree = window.confirm(`Are you sure you want to delete :${id} `);
     if (agree) {
       console.log("Deleting user with id:", id);
-      fetch(`http://localhost:5000/feedback/${id}`, {
+      fetch(`https://find-home-bd-server.vercel.app/feedback/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

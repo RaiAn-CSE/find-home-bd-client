@@ -74,7 +74,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/details/${params.id}`),
+          fetch(`https://find-home-bd-server.vercel.app/details/${params.id}`),
       },
       {
         path: "/conversations/:propertyId",

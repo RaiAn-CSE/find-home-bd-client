@@ -21,7 +21,7 @@ const ContactUs = () => {
       email: user.email,
       message: data.message,
     };
-    fetch("http://localhost:5000/feedback", {
+    fetch("https://find-home-bd-server.vercel.app/feedback", {
       method: "POST",
       headers: {
         "content-type": "application/json",

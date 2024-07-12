@@ -63,7 +63,7 @@ const AllProperty = () => {
     });
 
     fetch(
-      `http://localhost:5000/productCollection?price=${price}&city=${city}&area=${area}&rentType=${rentCheckValue}&bedAmount=${bedCheckValue}&washAmount=${washCheckValue}&month=${month}`
+      `https://find-home-bd-server.vercel.app/productCollection?price=${price}&city=${city}&area=${area}&rentType=${rentCheckValue}&bedAmount=${bedCheckValue}&washAmount=${washCheckValue}&month=${month}`
     )
       .then((res) => res.json())
       .then((data) => setPosts(data));
@@ -77,7 +77,7 @@ const AllProperty = () => {
     console.log(city, area, rent);
 
     fetch(
-      `http://localhost:5000/sortProducts?city=${city}&area=${area}&rent=${rent}`
+      `https://find-home-bd-server.vercel.app/sortProducts?city=${city}&area=${area}&rent=${rent}`
     )
       .then((res) => res.json())
       .then((data) => setPosts(data));
@@ -88,14 +88,14 @@ const AllProperty = () => {
     if (homeSearch?.city) {
 
       fetch(
-        `http://localhost:5000/sortProducts?city=${homeSearch?.city}&area=${homeSearch?.area}&rent=${homeSearch?.rent}`
+        `https://find-home-bd-server.vercel.app/sortProducts?city=${homeSearch?.city}&area=${homeSearch?.area}&rent=${homeSearch?.rent}`
       )
         .then((res) => res.json())
         .then((data) => setPosts(data));
     } else {
       const fetchPosts = async () => {
         setLoading(true);
-        const res = await axios.get("http://localhost:5000/productCollection");
+        const res = await axios.get("https://find-home-bd-server.vercel.app/productCollection");
         setPosts(res.data);
         setLoading(false);
       };

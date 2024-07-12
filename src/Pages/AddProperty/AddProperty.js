@@ -60,7 +60,7 @@ const AddProperty = () => {
 
           // Save Products information to the database
           fetch(
-            "http://localhost:5000/productCollection",
+            "https://find-home-bd-server.vercel.app/productCollection",
             {
               method: "POST",
               headers: {

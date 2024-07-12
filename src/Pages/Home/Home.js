@@ -21,7 +21,7 @@ const Home = () => {
   useTitle("Home");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/allProducts`)
+    fetch(`https://find-home-bd-server.vercel.app/allProducts`)
       .then((res) => res.json())
       .then((data) => setAdd(data));
   }, []);

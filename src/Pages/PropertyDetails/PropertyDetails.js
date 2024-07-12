@@ -53,7 +53,7 @@ const PropertyDetails = () => {
 
     console.log(paymentList);
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://find-home-bd-server.vercel.app/order", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(paymentList)
