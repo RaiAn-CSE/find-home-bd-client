@@ -146,6 +146,7 @@ const Signup = () => {
                     <option value="">Choose</option>
                     <option value="buyer">Renter</option>
                     <option value="seller">Property Owner</option>
+                    {/* <option value="admin">admin</option> */}
                   </select>
                   {errors.userType && (
                     <p className="text-red-500">{errors.userType.message}</p>

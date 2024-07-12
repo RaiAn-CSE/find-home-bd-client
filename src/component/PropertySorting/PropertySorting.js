@@ -19,24 +19,26 @@ const PropertySorting = ({ handleForm }) => {
           <Form.Select aria-label="Default select example" name="city" required>
             <option value="">Choose city...</option>
             <option value="Dhaka">Dhaka</option>
-            <option value="Chittagong">Chittagong</option>
+            {/* <option value="Chittagong">Chittagong</option>
             <option value="Rajshahi">Rajshahi</option>
             <option value="Rangpur">Rangpur</option>
             <option value="Barisal">Barisal</option>
             <option value="Khulna">Khulna</option>
             <option value="Sylhet">Sylhet</option>
-            <option value="Mymensingh">Mymensingh</option>
+            <option value="Mymensingh">Mymensingh</option> */}
           </Form.Select>
         </Form.Group>
         <h5 className="mt-2">Types of Rent</h5>
         <Form.Group required >
-          <Form.Check name="rentType" type="checkbox" label="Apartment Building" value="Apartment Building" />
+          {/* <Form.Check name="rentType" type="checkbox" label="Apartment Building" value="Apartment Building" /> */}
           <Form.Check name="rentType" type="checkbox" label="Flat Rent" value="Flat Rent" />
-          <Form.Check name="rentType" type="checkbox" label="Commercial Space" vale="Commercial Space" />
+          {/* <Form.Check name="rentType" type="checkbox" label="Commercial Space" vale="Commercial Space" /> */}
           <Form.Check name="rentType" type="checkbox" label="Office Space" value="Office Space" />
           <Form.Check name="rentType" type="checkbox" label="Shop & Restaurant" value="Shop & Restaurant" />
-          <Form.Check name="rentType" type="checkbox" label="Community Center" value="Community Center" />
+          {/* <Form.Check name="rentType" type="checkbox" label="Community Center" value="Community Center" /> */}
           <Form.Check name="rentType" type="checkbox" label="Hostel Rent" value="Hostel Rent" />
+          <Form.Check name="rentType" type="checkbox" label="Only for Boys" value="Only for Boys" />
+          <Form.Check name="rentType" type="checkbox" label="Only for Girls" value="Only for Girls" />
         </Form.Group>
         <h5 className="mt-2">Select Month</h5>
         <Form.Group>
